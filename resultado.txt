@@ -1,0 +1,53 @@
+Resultado MAP:
+[('o', 1), ('gato', 1), ('subiu', 1), ('no', 1), ('telhado', 1), ('o', 1), ('cachorro', 1), ('correu', 1), ('atras', 1), ('do', 1), ('gato', 1), ('o', 1), ('gato', 1), ('desceu', 1), ('do', 1), ('telhado', 1)]
+
+Resultado SHUFFLE/SORT:
+{'o': [1, 1, 1], 'gato': [1, 1, 1], 'subiu': [1], 'no': [1], 'telhado': [1, 1], 'cachorro': [1], 'correu': [1], 'atras': [1], 'do': [1, 1], 'desceu': [1]}
+
+Teste REDUCE:
+3
+
+Resultado final do MapReduce:
+{'o': 3, 'gato': 3, 'subiu': 1, 'no': 1, 'telhado': 2, 'cachorro': 1, 'correu': 1, 'atras': 1, 'do': 2, 'desceu': 1}
+
+Validação dos resultados:
+Quantidade de palavras no texto: 16
+Soma das ocorrências: 16
+Os valores são iguais? True
+
+Resultado final do MapReduce:
+{'atras': 1, 'cachorro': 1, 'correu': 1, 'desceu': 1, 'do': 2, 'gato': 3, 'no': 1, 'o': 3, 'subiu': 1, 'telhado': 2}
+
+Resultado do Nó 1:
+[('o', 1), ('gato', 1), ('subiu', 1), ('no', 1), ('telhado', 1)]
+
+Resultado do Nó 2:
+[('o', 1), ('cachorro', 1), ('correu', 1), ('atras', 1), ('do', 1), ('gato', 1)]
+
+Resultado do Nó 3:
+[('o', 1), ('gato', 1), ('desceu', 1), ('do', 1), ('telhado', 1)]
+
+Resultados reunidos dos três nós:
+[('o', 1), ('gato', 1), ('subiu', 1), ('no', 1), ('telhado', 1), ('o', 1), ('cachorro', 1), ('correu', 1), ('atras', 1), ('do', 1), ('gato', 1), ('o', 1), ('gato', 1), ('desceu', 1), ('do', 1), ('telhado', 1)]
+
+Resultado do Shuffle/Sort entre os nós:
+{'atras': [1], 'cachorro': [1], 'correu': [1], 'desceu': [1], 'do': [1, 1], 'gato': [1, 1, 1], 'no': [1], 'o': [1, 1, 1], 'subiu': [1], 'telhado': [1, 1]}
+
+Resultado final dos três nós:
+{'atras': 1, 'cachorro': 1, 'correu': 1, 'desceu': 1, 'do': 2, 'gato': 3, 'no': 1, 'o': 3, 'subiu': 1, 'telhado': 2}
+
+Resultado do processamento único:
+{'atras': 1, 'cachorro': 1, 'correu': 1, 'desceu': 1, 'do': 2, 'gato': 3, 'no': 1, 'o': 3, 'subiu': 1, 'telhado': 2}
+
+Os dois resultados são iguais?
+True
+
+MAP:
+[('o', 1), ('gato', 1), ('subiu', 1), ('no', 1), ('telhado', 1), ('o', 1), ('cachorro', 1), ('correu', 1), ('atras', 1), ('do', 1), ('gato', 1), ('o', 1), ('gato', 1), ('desceu', 1), ('do', 1), ('telhado', 1)]
+
+SHUFFLE/SORT:
+{'atras': [1], 'cachorro': [1], 'correu': [1], 'desceu': [1], 'do': [1, 1], 'gato': [1, 1, 1], 'no': [1], 'o': [1, 1, 1], 'subiu': [1], 'telhado': [1, 1]}
+
+REDUCE:
+{'atras': 1, 'cachorro': 1, 'correu': 1, 'desceu': 1, 'do': 2, 'gato': 3, 'no': 1, 'o': 3, 'subiu': 1, 'telhado': 2}
+
